@@ -4,9 +4,14 @@
 //     height: "5ft 9inch",
 //     hobbies: "Coding",
 //     greet: function() {
-//         console.log("Hello How are U");
+//         console.log("Hello How are U!");
 //     }
 // };
+
+// for(let key in obj) {
+//     console.log(key, "", obj[key]);
+// }
+
 
 // console.log(obj);
 // obj.greet();
@@ -58,14 +63,83 @@
 // console.log(ansArray);
 
 // FILTER
-let arr = [10,20,30,11,21,44,51];
+// let arr = [10,20,30,11,21,44,51];
 
-let evenArray = arr.filter((number) => {
-    if(number%2 ==0) {
-        return true;
-    }
-    else {
-        return false;
-    }
-});
-console.log(evenArray);
+// let evenArray = arr.filter((number) => {
+//     return number%2 === 0;
+//     // if(number%2 == 0) {
+//     //     return true;
+//     // }
+//     // else {
+//     //     return false;
+//     // }
+// });
+// console.log(evenArray);
+
+
+// let arr = [1,2,'soham','yash',null];
+
+// let ans = arr.filter((value) => {
+//     if(typeof(value) === 'number') {
+//         return true;
+//     }
+//     else {
+//         return false;
+//     }    
+// });
+
+// console.log(ans);
+
+
+// let arr = [10,20,30,40];
+// let ans = arr.reduce((acc,curr) => {
+//     return acc + curr;
+// }, 0);
+// console.log(ans);
+
+
+// let arr = [2,9,10,5,1,0];
+// arr.sort();
+// console.log(arr);
+
+
+// let arr = [10,20,30];
+// let length = arr.length;
+// console.log("length: ", length);
+
+// Traditional Loop
+// for(let index = 0; index < length; index++) {
+//     console.log(arr[index]);
+// }
+
+// arr.forEach((value, index) => {
+//     console.log("Number: ",value,"Index: ",index);
+// })
+
+
+// let arr = [10,20,30,40];
+
+// for(let value of arr) {
+//     console.log(value);
+// }
+
+
+// let fullName = "Soham";
+
+// for(let value of fullName) {
+//     console.log(value);
+// }
+
+
+let arr = [10,20,30,40,50];
+
+function getSum(arr) {
+    let sum = 0;
+    arr.forEach((value) => {
+        sum = sum + value;
+    });
+    return sum;
+}
+
+let TotalSum = getSum(arr);
+console.log(TotalSum);
